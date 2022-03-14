@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Josh Gutierrez Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section  id="banner">
+    <div class="banner-text">
+        <h1>Josh Gutierrez Portfolio</h1>
+        <p>Coding Enthusiast</p>
+        <div class="banner-bttn">
+            <a href="#aboutme"><span></span> About Me</a>
+            <a href="#socials"><span></span> Socials</a>
+        </div>
+    </div>
+
+ </section>
+<div id="sidenav">
+<nav>
+    <ul>
+        <li><a href='#'>HOME</a></li>
+        <li><a href='#aboutme'>ABOUT ME</a></li>
+        <li><a href='#socials'>SOCIALS</a></li>
+    </ul>
+</nav>
+</div>
+<div id="menubutton">
+    <img src="images/menu.png" id="menu">
+</div>
+
+<!--aboutme-->
+<section id="aboutme">
+<div class="title-text">
+<h1>About Me</h1>
+<p>Josh</p>
+</div>
+<div class="aboutme-box">
+    <div class="aboutme2">
+        <div class="aboutme2-desc">
+        <h1><li>30 year old who is making a career change into tech.</li>
+            <li>Graduated from Cal State LA</li>
+            <li>When not behind a computer I like to practice Martial Arts</li>
+            <li>Muay Thai, Jiu Jitsu</li> 
+        </h1>
+        </div>
+    </div>
+    <div class="aboutme2-img">
+        <img src="images/aboutme2.jpg"
+    </div>
+
+</div>
+
+</section>
+
+<!--Socials-->
+<section id="socials">
+    <div class="title-text">
+        <h1>Socials</h1>
+        <p>Instagram</p>
+        </div>
+        <div class="socials-box">
+            <div class="single-social">
+                <img src="images/instapic.jpg">
+                <div class="overlay"></div>
+                <div class="social-button">
+                    <a href="https://www.instagram.com/juhyash/">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                    
+                </div>
+            </div>
+        </div>
+
+</section>
+
+<script>
+var menubutton = document.getElementById("menubutton")
+var sidenav = document.getElementById("sidenav")
+var menu = document.getElementById("menu")
+
+sidenav.style.right ="-250px"
+
+menubutton.onclick = function(){
+    if(sidenav.style.right == "-250px"){
+        sidenav.style.right = "0";
+        menu.src = "images/close.png";
+    }
+    else{
+        sidenav.style.right = "-250px";
+        menu.src = "images/menu.png";
+    }
+}
+</script>
+
+</body>
+</html>

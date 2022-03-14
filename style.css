@@ -1,0 +1,195 @@
+@font-face {
+    font-family:'uncracked';
+    src: url(fonts/Uncracked\ Free\ Trial-6d44.woff) format("woff");
+}
+@font-face {
+    font-family: 'bugfast';
+    src: url(fonts/Bugfast-KnZD.ttf) format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#banner{
+    background: linear-gradient(rgba(0,0,0, 0.2),rgba(95, 11, 121, 0.3)),url(images/banner.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.banner-text{
+    text-align: center;
+    color: white;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-family: 'bugfast';
+    font-size: 100px;
+}
+.banner-text p{
+    font-family: 'uncracked';
+    font-size: 50px;
+}
+.banner-bttn{
+    margin: 70px auto 0;
+}
+.banner-bttn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-bttn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-bttn a:hover span{
+    width: 100%;
+}
+.banner-bttn a:hover{
+    color: black;
+}
+#sidenav{
+    width: 120px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #000000;
+    z-index: 2;
+    transition: 0.3s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+#menubutton{
+    width: 20px;
+    height: 20px;
+    background: #6e6d6d;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubutton img{
+    width: 10px;
+    margin-top: 5px;
+}
+
+/*--aboutme--*/
+#aboutme{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #6e6d6d;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text h1{
+    font-size: 50px;
+}
+.aboutme-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.aboutme2{
+    flex-basis: 50%;
+}
+.aboutme2-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.aboutme2-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.aboutme2-desc h1{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+/*--socials--*/
+#socials{
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 1));
+}
+.socials-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.single-social{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+
+}
+.single-social img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(255, 255, 255, 0.616));
+    opacity: 0;
+    transition: 1s;
+}
+.single-social:hover .overlay{
+    opacity: 1;
+}
+.social-button{
+    text-align: center;
+}
+.social-button .instagram{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #6e6d6d;
+    margin: 40px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
